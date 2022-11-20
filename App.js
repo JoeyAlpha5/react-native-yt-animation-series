@@ -6,7 +6,8 @@ import {
   StatusBar,
   StyleSheet,
   View,
-  Animated
+  Animated,
+  Easing,
 } from 'react-native';
 
 
@@ -20,6 +21,7 @@ const App: () => Node = () => {
       toValue: 1,
       duration: 3000,
       useNativeDriver: true,
+      easing: Easing.ease,
     }).start();
   },[])
 
